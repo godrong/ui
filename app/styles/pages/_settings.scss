@@ -165,6 +165,45 @@
   position: fixed;
   top: 0;
 }
+#sticker-top{
+  background-color: #34495E;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  z-index: 1501;
+  line-height: 1.6rem;
+  z-index: 100;
+  min-width: 1000px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1px 3px rgba(26,26,26,.1);
+  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+  background-clip: content-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .nav-logo {
+    height: 48px;
+    // background-size: auto 32px;
+    // background-position: left center;
+    // background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+  .logo-oss {
+    margin-left: 30px;
+    width: 120px;
+    background-image: url('images/logos/logo.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto 32px;
+    width: 75px;
+    // background-image: url(images/logos/rancher-logo-cow-white.svg);
+    background-size: 75%;
+    margin-left: 40px;
+  }
+  
+}
 
 #setting-ui-footer-banner {
   position: fixed;

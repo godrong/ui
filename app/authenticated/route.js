@@ -170,7 +170,7 @@ export default Route.extend(Preload, {
       } else if ( !isDev && (!seenWhatsNew || compare(seenWhatsNew, C.WHATS_NEW_VERSION) < 0) ) {
         // What's new
         scheduleOnce('afterRender', this, function() {
-          get(this, 'modalService').toggleModal('modal-whats-new');
+          // get(this, 'modalService').toggleModal('modal-whats-new');
         });
       }
     }

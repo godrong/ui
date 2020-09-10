@@ -12,7 +12,10 @@ $project-nav-active: $dropdown-link-hover-bg !default;
   @include no-select;
   margin-bottom: 10px;
   margin-right: 20px;
-  max-width:10%;
+  width:15%;
+  .fix-left-nav{
+    // max-width:80%;
+  }
   NAV {
     font-size: .9em;
     width: 100%;
@@ -21,7 +24,7 @@ $project-nav-active: $dropdown-link-hover-bg !default;
     display: -webkit-box;
     display: flex;
     flex: 0 1 auto;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
 
@@ -55,10 +58,15 @@ $project-nav-active: $dropdown-link-hover-bg !default;
       padding: 0;
       vertical-align: middle;
       // height: 50px;
-      margin-top: 35px;
+      // margin-top: 35px;
+      
+
 
       &.nav-main {
         flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
       }
 
       > li {
@@ -121,10 +129,10 @@ $project-nav-active: $dropdown-link-hover-bg !default;
     border-radius: 0 3px 3px 0;
     margin: 0;
     position: relative;
-    z-index: 4;
-    position:absolute;
+    z-index: 9999999;
+    position:fixed;
     right:50px;
-    top:10px;	
+    top:0;	
 
     .nav-item {
       a.nav-link {
@@ -257,8 +265,8 @@ $project-nav-active: $dropdown-link-hover-bg !default;
   }
 
   .logo-oss {
-    width: 80px;
-    background-image: url('images/logos/main.svg');
+    width: 120px;
+    background-image: url('images/logos/logo.png');
     background-position: left center;
     background-repeat: no-repeat;
     background-size: auto 32px;

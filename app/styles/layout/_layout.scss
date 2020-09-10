@@ -21,7 +21,7 @@ BODY {
   min-height: 150px; // header + footer + a bit
   display: flex;
   flex-direction: row;
-
+  margin-top: 75px;
   &.with-ui-header-banner {
     padding-top: 25px;
   }
@@ -43,6 +43,7 @@ BODY.popup #application {
 
 MAIN {
   position: relative;
+  width: 85%;
 }
 
 .footer-actions {
