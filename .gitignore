@@ -47,3 +47,4 @@ GTAGS
 yarn-error.log
 !Dockerfile.dapper
 Dockerfile.dapper*
+vendor/icons
